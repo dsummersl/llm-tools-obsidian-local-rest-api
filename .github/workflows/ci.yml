@@ -28,7 +28,7 @@ jobs:
           python-version-file: "pyproject.toml"
 
       - name: Install the project
-        run: uv --with poetry poetry install
+        run: uv run --with poetry poetry install
 
       - name: Run CI
-        run: uv --with poetry run poetry run make ci
+        run: uv run --with poetry poetry run make ci
