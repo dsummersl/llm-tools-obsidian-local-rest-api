@@ -1,0 +1,32 @@
+[project]
+name = "llm-tools-obsidian-local-rest-api"
+version = "0.1.0"
+description = "Expose an Obsidian Local REST API to LLM as a tool"
+authors = [
+    {name = "Dane Summers",email = "dsummersl@yahoo.com"}
+]
+license = {text = "Apache 2.0"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "llm>=0.26"
+]
+
+[project.urls]
+Homepage = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api"
+Changelog = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api/releases"
+Issues = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api/issues"
+CI = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api/actions"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+ruff = "^0.12.2"
+pytest-vcr = "^1.0.2"
+
+[project.entry-points.llm]
+llm_tools_datasette = "plugin.llm_tools_obsidian_local_rest_api"
