@@ -13,6 +13,9 @@ dependencies = [
     "llm>=0.26"
 ]
 
+[tool.poetry]
+packages = [{ include = "plugin" }]
+
 [project.urls]
 Homepage = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api"
 Changelog = "https://github.com/dsummersl/llm-tools-obsidian-local-rest-api/releases"
