@@ -7,5 +7,5 @@ ruff-fix:
 test:
 	pytest
 
-lint-test: ruff-lint test
+ci: ruff-lint test
 	@echo "Linting and tests completed."
